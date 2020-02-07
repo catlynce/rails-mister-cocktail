@@ -1,3 +1,15 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.cocktails {
+    display: flex;
+}
+
+.cocktail {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: linear-gradient(#e1f2fb, #f3dfe3);
+}
