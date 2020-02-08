@@ -1,5 +1,20 @@
-    <div class="item cocktail">
+<div class="carousel-item active">
+    <div class="item cocktail" style="background-image: url(<%= cocktail.photo %>);">
         <%= link_to cocktail_path(cocktail) do %>
-            <%= cocktail.name %>
+            <div class="name">
+                <%= cocktail.name %>
+            </div>
+            <div class="description">
+                <%= cocktail.description %>
+            </div>
+
+            <div class="ingredients">
+                <% cocktail.doses.each do |dose| %>
+                    <div>
+                        <%= dose.description %> - <%= dose.ingredient.name %>
+                    </div>
+                <% end %>
+            </div>
         <% end %>
     </div>
+</div>
