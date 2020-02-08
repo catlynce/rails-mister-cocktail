@@ -12,13 +12,11 @@
 
   <body>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
           <%= yield %>
-        </div>
-      </div>
-    </div>
+
+    <%= link_to new_cocktail_path, class: 'button' do %>
+        <span>Add cocktail</span>
+    <% end %>
 
     <%= javascript_pack_tag "application" %>
   </body>
