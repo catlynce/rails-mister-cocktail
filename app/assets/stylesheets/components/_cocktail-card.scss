@@ -1,16 +1,4 @@
-// Place all the styles related to the Cocktails controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
-.cocktails {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    height: 100%;
-}
-
-.cocktail {
+.cocktail-card {
     margin: 20px;
     width: 700px;
     height: 500px;
